@@ -31,3 +31,5 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+![CI](https://github.com/knbz/KoreNBeatZ-Blockchain-solutions/workflows/CI/badge.svg?branch=knbz-patch-1&event=registry_package)
+
