@@ -13,7 +13,8 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs: KoreNBeatZ Blockchain
   # This workflow contains a single job called "build"
-  build:
+"build":
+
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -31,5 +32,5 @@ jobs: KoreNBeatZ Blockchain
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-![CI](https://github.com/knbz/KoreNBeatZ-Blockchain-solutions/workflows/CI/badge.svg?branch=knbz-patch-1&event=registry_package)
+#[CI](https://github.com/knbz/KoreNBeatZ-Blockchain-solutions/workflows/CI/badge.svg?branch=knbz-patch-1&event=registry_package)
 
