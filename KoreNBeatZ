@@ -1,0 +1,58 @@
+[0KRunning with gitlab-runner 13.9.0-rc2 (69c049fd)
+[0;m[0K  on docker-auto-scale 72989761
+[0;m[0K  feature flags: FF_GITLAB_REGISTRY_HELPER_IMAGE:true
+[0;msection_start:1616613680:prepare_executor
+[0K[0K[36;1mPreparing the "docker+machine" executor[0;m
+[0;m[0KUsing Docker executor with image sourcegraph/lsif-go:v1 ...
+[0;m[0KPulling docker image sourcegraph/lsif-go:v1 ...
+[0;m[0KUsing docker image sha256:f7a5318f3dfc303e7a38795d3e5c0bbf792459b8c73f5f4a3b8d551f400d94ed for sourcegraph/lsif-go:v1 with digest sourcegraph/lsif-go@sha256:74094c283bf1443ada33fce1259dab588a8612f17112b8099e9943a0248f1fd0 ...
+[0;msection_end:1616613715:prepare_executor
+[0Ksection_start:1616613715:prepare_script
+[0K[0K[36;1mPreparing environment[0;m
+[0;mRunning on runner-72989761-project-13328946-concurrent-0 via runner-72989761-srm-1616613631-fdb0cfb1...
+section_end:1616613718:prepare_script
+[0Ksection_start:1616613718:get_sources
+[0K[0K[36;1mGetting source from Git repository[0;m
+[0;m[32;1m$ eval "$CI_PRE_CLONE_SCRIPT"[0;m
+[32;1mFetching changes with git depth set to 50...[0;m
+Initialized empty Git repository in /builds/korenbeatz84/koren/.git/
+[32;1mCreated fresh repository.[0;m
+[32;1mChecking out 64fa8e2d as master...[0;m
+
+[32;1mSkipping Git submodules setup[0;m
+section_end:1616613719:get_sources
+[0Ksection_start:1616613719:step_script
+[0K[0K[36;1mExecuting "step_script" stage of the job script[0;m
+[0;m[0KUsing docker image sha256:f7a5318f3dfc303e7a38795d3e5c0bbf792459b8c73f5f4a3b8d551f400d94ed for sourcegraph/lsif-go:v1 with digest sourcegraph/lsif-go@sha256:74094c283bf1443ada33fce1259dab588a8612f17112b8099e9943a0248f1fd0 ...
+[0;m[32;1m$ lsif-go[0;m
+WARNING: No go.mod file found in current directory.
+⠸ Loading packages... [1000D[0K⠼ Loading packages...
+[1000D[0K[1A[1000D[0K⠼ Loading packages...
+[1000D[0K[1A[1000D[0K⠴ Loading packages...
+[1000D[0K[1A[1000D[0K⠴ Loading packages...
+[1000D[0K[1A[1000D[0K⠦ Loading packages...
+[1000D[0K[1A[1000D[0K⠦ Loading packages...
+[1000D[0K[1A[1000D[0K⠧ Loading packages...
+[1000D[0K[1A[1000D[0K⠧ Loading packages...
+[1000D[0K[1A[1000D[0K⠇ Loading packages...
+[1000D[0K[1A[1000D[0K⠇ Loading packages...
+[1000D[0K[1A[1000D[0K⠏ Loading packages...
+[1000D[0K[1A[1000D[0K✔ Loading packages... Done
+⠏ Emitting documents... [1000D[0K✔ Emitting documents... Done
+⠏ Adding import definitions... [1000D[0K✔ Adding import definitions... Done
+⠏ Indexing definitions... [1000D[0K✔ Indexing definitions... Done
+⠏ Indexing references... [1000D[0K✔ Indexing references... Done
+⠏ Linking items to definitions... [1000D[0K✔ Linking items to definitions... Done
+⠏ Emitting contains relations... [1000D[0K✔ Emitting contains relations... Done
+section_end:1616613722:step_script
+[0Ksection_start:1616613722:upload_artifacts_on_success
+[0K[0K[36;1mUploading artifacts for successful job[0;m
+[0;m[32;1mUploading artifacts...[0;m
+dump.lsif: found 1 matching files and directories [0;m 
+Uploading artifacts as "lsif" to coordinator... ok[0;m  id[0;m=1125301568 responseStatus[0;m=201 Created token[0;m=cy3s5nYr
+section_end:1616613724:upload_artifacts_on_success
+[0Ksection_start:1616613724:cleanup_file_variables
+[0K[0K[36;1mCleaning up file based variables[0;m
+[0;msection_end:1616613725:cleanup_file_variables
+[0K[32;1mJob succeeded
+[0;m
